@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flashcard Study App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Flashcard Study App</h1>
+
+    <!-- Flashcard Display -->
+    <div id="flashcard-container"></div>
+
+    <!-- Navigation -->
+    <div class="navigation">
+      <button id="prev-btn" class="nav-btn">⬅ Previous</button>
+      <span id="card-counter">0 / 0</span>
+      <button id="next-btn" class="nav-btn">Next ➡</button>
+    </div>
+
+    <!-- Add New Flashcard -->
+    <div class="add-card-section">
+      <h2>Add New Flashcard</h2>
+      <form id="add-card-form">
+        <div class="form-group">
+          <label for="question-input">Question</label>
+          <textarea id="question-input" placeholder="Enter your question..." required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="answer-input">Answer</label>
+          <textarea id="answer-input" placeholder="Enter the answer..." required></textarea>
+        </div>
+        <button type="submit" class="add-btn">Add Card</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
